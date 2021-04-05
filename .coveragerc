@@ -1,0 +1,14 @@
+[report]
+omit =
+	*/env/*
+	*/venv/*
+	*/tests/*
+	*/migrations/*
+	*/management/*
+	*/scripts/*
+	*/apps.py
+	*/admin.py
+	*/factories.py
+	*/test_utils.py
+	*/manage.py
+	*/__init__.py

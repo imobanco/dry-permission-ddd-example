@@ -1,0 +1,18 @@
+# Local development dependencies go here
+-r requirements.txt
+
+# Coverage
+# ------------------------------------------------
+coverage==5.0.3
+
+# Tests
+# ------------------------------------------------
+factory_boy==2.12.0
+faker==4.1
+freezegun==0.3.15
+tblib
+
+# CI
+# ------------------------------------------------
+black
+flake8

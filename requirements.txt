@@ -1,0 +1,20 @@
+# Bleeding edge Django
+django==3.1.*
+
+# Rest
+coreapi==2.3.3
+djangorestframework==3.12.*
+# django-dry-rest-permissions==1.1.0
+git+https://github.com/imobanco/dry-rest-permissions@feature/get_permission_target
+
+# Env
+python-decouple==3.3
+
+# Database
+psycopg2-binary==2.8.*
+
+# Images
+pillow==7.0.0
+
+# Server dependencies
+gunicorn==20.0.4

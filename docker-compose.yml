@@ -1,0 +1,37 @@
+version: "3.7"
+
+volumes:
+  pg_volume: {}
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    user: "0:0"
+    container_name: service-django
+    restart: always
+    environment:
+      - DEBUG=True
+    ports:
+      - "8000:8000"
+    working_dir: /app
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+
+  postgres:
+    image: postgres:12.3-alpine
+    container_name: service-postgres
+    volumes:
+      - pg_volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres

@@ -1,0 +1,18 @@
+[
+  {
+    "model": "users.user",
+    "pk": "56c3e1a6-08cb-483e-95eb-574f1c62b63a",
+    "fields": {
+      "created_at": "2020-08-16T21:32:59.524Z",
+      "updated_at": "2020-08-16T21:32:59.621Z",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "superuser",
+      "email": "superuser@example.com",
+      "password": "pbkdf2_sha256$150000$3hxqDVBjaqcs$n3SJxdm9W9k63sVAHu0b7o0Yhb9d04DK4ADgdoO0Lao=",
+      "is_staff": true,
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
